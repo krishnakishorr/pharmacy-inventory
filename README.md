@@ -89,10 +89,12 @@ The app will run at `http://localhost:5173` and talk to the Django API automatic
 
 ## Deployment
 
-Not deployed live for this submission (optional per the assessment brief) — the app is
-built to run locally following the steps above. `frontend/.env.example` shows how to
-point the frontend at a hosted backend URL if deployed later (e.g. Django on Render +
-React on Vercel).
+Live demo:
+- Frontend: https://pharmacy-inventory-iota.vercel.app
+- Backend API: https://rxtrack-backend.onrender.com/api
+
+Note: the backend is hosted on Render's free tier, which sleeps after inactivity —
+the first request after idle time may take 30-60 seconds to respond.
 
 ## Future Enhancements
 
