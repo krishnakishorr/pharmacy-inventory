@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: rxtrack-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt && python manage.py migrate && python manage.py seed_data"
+    startCommand: "gunicorn config.wsgi:application --bind 0.0.0.0:$PORT"
